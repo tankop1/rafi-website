@@ -150,6 +150,7 @@ main {
 main section {
     font-family: 'Courier New', Courier, monospace;
     width: 55%;
+    display: inline-block;
 }
 
 main section h1 {
@@ -169,14 +170,39 @@ main section a:hover {
     color: white;
 }
 
+#hook-img {
+    float: right;
+    width: 33%;
+    height: auto;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+    main section h1 {
+        font-size: 3rem;
+    }
+}
+
 @media only screen and (max-width: 768px) and (min-width: 425px) {
     main section h1 {
-        font-size: 3.25rem;
+        font-size: 3rem;
     }
     
     main section {
-        width: 85%;
+        width: 100%;
         align-content: center;
+        text-align: center;
+    }
+
+    #hook-img {
+        float: none;
+        width: 60%;
+        height: auto;
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+
+    #center {
         text-align: center;
     }
 }
@@ -191,6 +217,10 @@ main section a:hover {
     }
 
     footer p {
+        display: none;
+    }
+
+    #hook-img {
         display: none;
     }
 }
