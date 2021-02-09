@@ -155,3 +155,17 @@ SVG Icons
 
 /* BELOW THIS LINE, STYLE RULES WILL CHANGE BASED ON PAGE */
 /* PAGE STYLES BELOW */
+
+main section {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main section center {
+    width: 50%;
+    margin: 0 auto;
+    padding: 8%;
+}
+
+main section h1 {
+    font-size: 4.25rem;
+}
