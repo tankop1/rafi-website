@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* HEADER AND NAV BAR */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 1.5rem;
+}
+
+#logo {
+    text-decoration: none;
+    letter-spacing: .3rem;
+    color: white;
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: .3rem;
+    padding: 5px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid white;
+}
+
+#emph {
+    padding: 10px;
+    border: 3px solid white;
+}
+
+#emph:hover {
+    color: black;
+    background-color: white;
+}
+
+.burger div {
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+    margin: 5px;
+}
+
+.burger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(19, 19, 19);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(19, 19, 19);
+    padding: 1.5rem;
+}
+
+footer p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    float: right;
+}
+
+footer p a {
+    color: white;
+}
+
+@media only screen and (max-width: 865px) {
+    footer p span {
+        display: none;
+    }
+}
+
+/* -----
+SVG Icons
+----- */
+
+.svg-icon {
+    width: 2em;
+    height: 2em;
+}
+  
+.svg-icon path {
+  fill: white;
+}
+  
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+#insta:hover {
+    fill: #7232bd;
+    cursor: pointer;
+}
+
+#tube:hover {
+    fill: red;
+    cursor: pointer;
+}
+
+#fbook:hover {
+    fill: #285AEB;
+    cursor: pointer;
+}
+
+#twitter:hover {
+    fill: #285AEB;
+    cursor: pointer;
+}
+
+/* BELOW THIS LINE, STYLE RULES WILL CHANGE BASED ON PAGE */
+/* PAGE STYLES BELOW */
+
+#background {
+    background-image: url(https://images.wallpaperscraft.com/image/headphones_bw_headset_120277_3840x2400.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid rgb(19, 19, 19);
+}
+
+main {
+    padding: 4%;
+}
+
+main h1 {
+    color: white;
+    font-size: 6.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main p {
+    color: white;
+    font-size: medium;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.rec {
+    width: 20%;
+    height: auto;
+}
+
+#row-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.desc {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#row-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#fav-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.fav-img {
+    width: 35%;
+    height: auto;
+}
+
+#favorite {
+    margin-top: 150px;
+    align-content: center;
+    background-color: rgb(230, 119, 28);
+    padding: 4rem;
+}
+
+#fav-audio {
+    display: block;
+    margin: 0 auto;
+}
+
+#middle {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+#fav-title {
+    font-size: x-large;
+}
