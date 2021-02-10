@@ -11,7 +11,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: gray;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -54,7 +53,7 @@ nav {
 }
 
 #emph:hover {
-    color: grey;
+    color: black;
     background-color: white;
 }
 
@@ -79,7 +78,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: grey;
+        background-color: rgb(19, 19, 19);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -100,18 +99,18 @@ nav {
 /* FOOTER */
 
 footer {
-    background-color: lightgray;
+    background-color: rgb(19, 19, 19);
     padding: 1.5rem;
 }
 
 footer p {
     font-family: 'Courier New', Courier, monospace;
-    color: gray;
+    color: white;
     float: right;
 }
 
 footer p a {
-    color: gray;
+    color: white;
 }
 
 @media only screen and (max-width: 865px) {
@@ -129,17 +128,8 @@ SVG Icons
     height: 2em;
 }
   
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: grey;
-}
-
-.svg-icon path:hover,
-.svg-icon polygon:hover,
-.svg-icon rect:hover {
-  fill: blue;
-  cursor: pointer;
+.svg-icon path {
+  fill: white;
 }
   
 .svg-icon circle {
@@ -147,46 +137,82 @@ SVG Icons
   stroke-width: 1;
 }
 
+#insta:hover {
+    fill: #7232bd;
+    cursor: pointer;
+}
+
+#tube:hover {
+    fill: red;
+    cursor: pointer;
+}
+
+#fbook:hover {
+    fill: #285AEB;
+    cursor: pointer;
+}
+
+#twitter:hover {
+    fill: #285AEB;
+    cursor: pointer;
+}
+
 /* BELOW THIS LINE, STYLE RULES WILL CHANGE BASED ON PAGE */
 /* PAGE STYLES BELOW */
 
 main {
-    padding: 13%;
+    padding: 21%;
+}
+
+#background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(https://images.wallpaperscraft.com/image/headphones_synthesizer_wires_124773_3840x2400.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 main section {
     font-family: 'Courier New', Courier, monospace;
     width: 55%;
     display: inline-block;
+    color: white;
 }
 
 main section h1 {
     font-size: 4.25rem;
+    font-weight: 900;
+    text-shadow: 0 0 40px black;
 }
 
 main section a {
     text-decoration: none;
-    border: 3px solid grey;
-    color: grey;
+    border: 3px solid white;
+    color: white;
     font-weight: bold;
     padding: 10px;
 }
 
 main section a:hover {
-    background-color: grey;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
-#hook-img {
-    float: right;
-    width: 33%;
-    height: auto;
-    border: 2px solid black;
+#center {
+    text-align: center;
+}
+
+main section {
+    width: 100%;
+    align-content: center;
+    text-align: center;
 }
 
 @media only screen and (max-width: 900px) and (min-width: 768px) {
     main section h1 {
         font-size: 3rem;
+    }
+
+    main {
+        padding: 25%;
     }
 }
 
@@ -194,23 +220,9 @@ main section a:hover {
     main section h1 {
         font-size: 3rem;
     }
-    
-    main section {
-        width: 100%;
-        align-content: center;
-        text-align: center;
-    }
 
-    #hook-img {
-        float: none;
-        width: 60%;
-        height: auto;
-        margin-top: 20%;
-        margin-left: 20%;
-    }
-
-    #center {
-        text-align: center;
+    main {
+        height: 800px;
     }
 }
 
@@ -226,8 +238,8 @@ main section a:hover {
     footer p {
         display: none;
     }
-
-    #hook-img {
-        display: none;
+    main {
+        padding: 12%;
+        height: 700px;
     }
 }
