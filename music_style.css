@@ -260,3 +260,33 @@ main p {
 #fav-title {
     font-size: x-large;
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rec-2 {
+    width: 10%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    main p {
+        width: 85%;
+    }
+    .remove {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .desc {
+        display: none;
+    }
+}
