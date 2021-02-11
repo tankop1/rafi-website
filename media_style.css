@@ -207,6 +207,7 @@ main p {
 section div video {
     width: 45%;
     height: auto;
+    z-index: -1;
 }
 
 #row-4 img, #row-3 img {
