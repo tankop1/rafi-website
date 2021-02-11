@@ -119,6 +119,12 @@ footer p a {
     }
 }
 
+@media only screen and (max-width: 525px) {
+    footer p {
+        display: none;
+    }
+}
+
 /* -----
 SVG Icons
 ----- */
@@ -185,6 +191,31 @@ main p {
     display: block;
     margin: 0 auto;
     font-family: 'Courier New', Courier, monospace;
+}
+
+#row-1, #row-2, #row-3, #row-4 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 100px;
+}
+
+#row-2, #row-4 {
+    margin-bottom: 80px;
+}
+
+section div video {
+    width: 45%;
+    height: auto;
+}
+
+#row-4 img, #row-3 img {
+    width: 30%;
+    height: auto;
+}
+
+#row-4 img:hover, #row-3 img:hover {
+    transform: scale(1.01);
 }
 
 @media only screen and (max-width: 768px) {
