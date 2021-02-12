@@ -219,6 +219,7 @@ main p {
     border: 3px solid rgb(19, 19, 19);
     color:rgb(19, 19, 19);
     text-decoration: none;
+    text-align: center;
 }
 
 #button:hover {
@@ -256,6 +257,7 @@ main p {
 .emph-title {
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
+    text-align: center;
 }
 
 .emph-desc {
@@ -266,8 +268,8 @@ main p {
 
 .emph-img {
     object-fit: cover;
-    width: 80%;
-    height: 80%;
+    width: 200px;
+    height: 150px;
 }
 
 #emph-sec {
@@ -299,6 +301,7 @@ main p {
     width: 175px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 #link:hover {
