@@ -194,28 +194,30 @@ main p {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#row-1, #row-2, #row-3, #row-4 {
+#row-1, #row-2, #row-3 {
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    margin-top: 100px;
+    align-items: space-between;
+    flex-wrap: wrap;
 }
 
-#row-2, #row-4 {
+#row-2 {
     margin-bottom: 80px;
 }
 
 section div video {
-    width: 45%;
+    width: 650px;
     height: auto;
+    margin-top: 80px;
 }
 
-#row-4 img, #row-3 img {
-    width: 30%;
+#row-3 img {
+    width: 400px;
     height: auto;
+    margin-top: 80px;
 }
 
-#row-4 img:hover, #row-3 img:hover {
+#row-3 img:hover {
     opacity: .6;
 }
 
@@ -225,5 +227,27 @@ section div video {
     }
     .remove {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    section div video {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    section div video {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    section div video {
+        width: 300px;
+    }
+
+    #row-3 img {
+        width: 300px;
     }
 }
