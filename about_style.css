@@ -193,6 +193,132 @@ main p {
     font-family: 'Courier New', Courier, monospace;
 }
 
+#about {
+    width: 90%;
+    height: auto;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about-img {
+    width: 350px;
+    height: auto;
+    /*border: 2px solid rgb(19, 19, 19);*/
+    box-shadow: 10px 16px;
+    margin-top: 100px;
+}
+
+#child {
+    width: 450px;
+    margin-top: 100px;
+}
+
+#button {
+    padding: .75rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px solid rgb(19, 19, 19);
+    color:rgb(19, 19, 19);
+    text-decoration: none;
+}
+
+#button:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 85%;
+}
+
+#emph-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.emph-column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 250px;
+}
+
+.emph-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+.emph-desc {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    text-align: center;
+}
+
+.emph-img {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+}
+
+#emph-sec {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    padding: 5rem;
+    background-color: lightgrey;
+}
+
+#hook {
+    margin-bottom: 80px;
+    padding: 2%;
+}
+
+#hook-title {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    padding: 2%;
+}
+
+#link {
+    display: block;
+    margin: 0 auto;
+    padding: .75rem;
+    border: 2px solid rgb(19, 19, 19);
+    color:rgb(19, 19, 19);
+    text-decoration: none;
+    width: 175px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#link:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+
+@media only screen and (max-width: 940px) {
+    #button {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+    }
+    #about {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     main p {
         width: 85%;
