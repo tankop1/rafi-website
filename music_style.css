@@ -290,8 +290,30 @@ main p {
 }
 
 .rec-2 {
-    width: 10%;
+    width: 20%;
     height: auto;
+    display: inline-block;
+}
+
+.text {
+    display: inline-block;
+}
+
+.child {
+    width: 450px;
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 530px) {
+    .audio-2 {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .rec-2 {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
